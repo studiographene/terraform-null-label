@@ -128,6 +128,9 @@ locals {
     # For AWS we need `Name` to be disambiguated since it has a special meaning
     name       = local.id
     attributes = local.id_context.attributes
+    
+    # Custom Added by StudioGraphene
+    ManagedBy = "Terraform"
   }
 
   generated_tags = {
